@@ -1,0 +1,17 @@
+<?php
+$username = $_POST['Username'];
+$vorname = $_POST['Vorname'];
+$nachname = $_POST['Name'];
+$mail = $_POST['Email'];
+$passwort = $_POST['Passwort'];
+$geburtsdatum = $_POST['Geburtsdatum'];
+
+// neue Datenbankverbindung
+$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
+
+$query = 'insert into registration (Benutzer_ID, Username, Nachname, Vorname, Mail, Passwort, Geburtsdatum)
+		values (null,"'.$username.'","'.$nachname.'","'.$vorname.'","'.$mail.'",md5("'.$passwort.'"),"'.$geburtsdatum.'");';
+
+$mysqli->query($query);
+header ("Refresh: 0; url=index.php");
+?>

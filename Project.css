@@ -1,0 +1,306 @@
+@CHARSET "UTF-8";
+
+html {
+	background-image: url("Bilder/particles.png");
+}
+body {
+	  	background-repeat: no-repeat;
+	  	margin: 0;
+	  	padding: 0;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#logo {
+	float: left;
+	width: 350px;
+}
+
+#logo img {	
+	width: 350px;
+}
+
+#aktuelle_videos {
+	
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+#header {
+	background-image: url("Bilder/FarCry4.png");
+	height: 325px;
+	margin: 15px 0px 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#menu {
+	font-family: Arial,sans-serif;
+	font-weight: bold;
+	width: auto;
+	height: 58px;
+	background-color: #D6D6D6;
+}
+
+a {
+	color: black;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 8px;
+	height: 30px;
+	text-align: center;
+}
+
+ul li {
+	float: left;
+	padding: 8px;
+	color: black;
+	width: 90px;
+}
+
+ul li:hover {
+	background-color: #C2C2C2;
+	margin: -5px 0px 0px 0px;
+}
+
+ul li ul li {
+	display: none;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	height: 45px;
+}
+
+ul li ul li a {
+	display: block;
+	text-decoration: none;
+	background-color: #C2C2C2;
+	
+}
+
+
+.highlight {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bolder;
+	color: white;
+}
+ul li:hover ul li {
+	width: 300px;
+	display: block;
+	float: none;
+	margin: -13.5px 0px 0px -18px;
+	padding: 5px auto;
+	font-weight: normal;
+	background-color: #D6D6D6;
+	text-decoration: none;	
+}
+
+ul li ul li:hover {
+	background-color: #C2C2C2;
+	margin: -10px 10px 0px 10px;
+}
+.newsTitle {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	padding: 20px 0px 20px 20px;
+}
+
+.news {
+	font-family: Arial;
+	font-size: 16px;
+	color: black;
+	padding: 20px 20px 20px 20px;
+}
+
+.links {
+	float: left;
+	margin: -10px 10px 0px 0px;
+	width: 300px;
+	background-color: #D6D6D6;	
+}
+
+.rechts {
+	float: left;
+	width: 650px;
+	margin: -10px 0px 0px 0px;
+	padding: 0px 20px 0px 20px;
+	background-color: #D6D6D6;	
+}
+
+.seite {
+	float: left;
+	height: 450px;
+	width: 1000px;
+	margin: -45px 0px 0px 0px;
+	background-color: #D6D6D6;
+}
+
+#aktuelle_videos img
+{
+		width: 300px;
+		height: 180px;
+		float: left;
+		margin: 0px 20px 0px 0px
+}
+
+#header .highlight {
+	background: rgba(204, 215, 237, 0.5);
+	padding: 30px 0px 30px 10px;
+	margin: 0px 700px 0px 0px;
+	clear: both;
+}
+
+#header .highlight a {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.plattform {
+	margin: 20px 20px 20px 20px;
+}
+
+#aktuelle_videos a {
+	text-decoration: none;
+}
+
+.plattform .newsTitle {
+	margin: 0px 0px 0px -20px;
+}
+
+.kontakt {
+	float: left;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	height: 40px;
+	width: 80px;
+	padding: 20px 0px 0px 20px;
+	clear: both;
+}
+
+.formular {
+	float: left;
+	margin: 0px 0px 20px 30px;
+	width: 400px;
+	height: 350px;
+	clear: both;
+}
+
+.formular .news {
+	margin: -150px 50px 0px 400px;
+}
+
+#map {
+	float:left;
+	z-index: -10;
+	margin: 0px 0px 0px 20px;
+}
+
+.regal_seite {
+	height: 488px;
+	width: 100%;
+	padding-top: 0px;
+	margin-top: 20px;
+	background-image: url("Bilder/regal.jpg");
+	background-repeat: repeat;
+}
+
+.regal_ln1 {
+	float: left;
+	clear: both;
+	height: 240px;
+	width: 100%;
+	margin-top: -20px;
+}
+
+.regal_ln1 img {
+	float: left;
+	height: 200px;
+	width: 120px;
+	margin: 0px 80px 20px 20px;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    border-radius: 8px;
+}
+
+.regal_ln1 img:hover {
+	width: 140px;
+	height: 240px;
+}
+
+#footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin:-15px 0px 0px 0px;
+}
+
+.seite img
+{
+		width: 300px;
+		height: 180px;
+		float: left;
+		margin: 20px 20px 0px 20px
+}
+
+.seite a {
+	float: left;
+}
+
+.anmeldung {
+	font-size: 9px;
+	padding: 20px 0px 45px 5px;
+}
+
+.ep_name a{
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.anmeldung:hover {
+	color:white;
+}
+
+
+.registration {
+	float: left;
+	margin: 10px 10px 0px 0px;
+	width: 300px;
+	background-color: #D6D6D6;	
+}
+
+.login {
+	float: left;
+	width: 650px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 20px 0px 20px;
+	background-color: #D6D6D6;	
+}
+.Youtube_Video iframe {
+	margin: -10px 0px 20px 520px;
+}
+
+iframe {
+	float:left;
+}
