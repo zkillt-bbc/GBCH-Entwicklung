@@ -18,8 +18,8 @@
 				<text>
 					<a href="League_of_Legends.php">League of Legends</a></br>
 						<span class = "ep_name"><a href="Lol_ep1.php">Episode 1: Botlane of Doom</a></span></br></br>				
-						Dies ist die erste League of legends Folge.
-						In dieser Episode spiele ich Irelia auf der Toplane und Lulu ownt auf
+						Dies ist die erste League of Legends Folge.
+						In dieser Episode spielt Nova mit Irelia auf der Toplane und Lulu ownt auf
 						der Bot mit Lucian. </br></br></br></br></br>
 				</text>
 			</div>
@@ -28,8 +28,8 @@
 				<text>
 					<a href="http://www.gbch.ch/games/deadspace_3">Deadspace 3</a></br>
 						Episode 7: Raumschiff Dilema</br></br>				
-						Nach einem Fatalen Raumschiffabsturz sind wir
-						auf dem Planeten der Marker gelandet, aufdem wir
+						Nach einem fatalen Raumschiffabsturz sind wir
+						auf dem Planeten der Marker gelandet, auf dem wir
 						ohne Unterbruch von den ehemaligen Crewmitgliedern
 						angegriffen werden. </br></br></br></br></br>
 				</text>
@@ -40,7 +40,7 @@
 					<a href="http://www.gbch.ch/games/borderlands_the_pre_sequel">Borderlands: The Pre Sequel</a>
 						Episode 24: Abschuss!</br></br>				
 						Nachdem wir mehr oder weniger erfolgreich Captain Jack
-						vor der Regierung gerettet haben, hat er sich revongiert
+						vor der Regierung gerettet haben, hat er sich revanchiert
 						und uns in einem Transportcontainer auf den Mond geschossen.
 				</text>
 			</div>
