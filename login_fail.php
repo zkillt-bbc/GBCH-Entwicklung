@@ -23,7 +23,7 @@ require_once 'Menu_with_Banner.php';
 					<input id="Vorname" name="Vorname" placeholder="Vorname" required/></br></br>
 					<input id="Email" name="Email" type="email" placeholder="E-Mail" required/></br></br>
 					<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" required/></br></br>
-					<input id="Passwort_bestätigen" name="Passwort_bestätigen" type="password" placeholder="Passwort best&auml;tigen" required/></br></br>
+					<input id="Passwort_bestÃ¤tigen" name="Passwort_bestÃ¤tigen" type="password" placeholder="Passwort best&auml;tigen" required/></br></br>
 					<input id ="Geburtsdatum" name="Geburtsdatum" type="date" reguired></br></br>
 					<input id ="submit" type="submit" name="submit" value="Registrieren"/>
 				</form>
@@ -38,7 +38,7 @@ require_once 'Menu_with_Banner.php';
 					<input id="Username" name="Username" placeholder="Username" required/></br></br>
 					<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" reguired/></br></br>		
 					<input type="submit" value="Login"/>
-					<p>Login Fehlgeschlagen!</p>
+					<p color ="red">Inkorrektes Passwort!</p>
 				</form>
 			</div>
 		</div>
