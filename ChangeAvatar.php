@@ -1,6 +1,6 @@
 <?php
 ?>
-<link rel="stylesheet" href="ChangeAvatar.css">
+<link rel="stylesheet" href="Project.css">
 
 <!-- Code von Popup -->
 <a href="#openAvatar">Avatar &auml;ndern</a>
