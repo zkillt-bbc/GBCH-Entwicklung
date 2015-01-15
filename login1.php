@@ -28,9 +28,6 @@ while($zeile = $result->fetch_array())
 }
 //In diesem Styl kannst du überall die Session Infos abrufen:
 if($_SESSION["logedin"]){
-include 'Menu_with_Banner';
-include 'eintragen.php';
-$register = $name;
 header('Location: index.php');
 
 } else {

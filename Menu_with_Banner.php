@@ -1,5 +1,4 @@
 <?php 
-$register = "<text>" . "registrieren / login" . "</text>";
 ?>
 <html>
 <head>
@@ -8,7 +7,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 <link href="Project.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<?php if (!$_SESSION["logedin"]) {?>
+	<?php if ($_SESSION["logedin"] == false) {?>
 	<div id="container">
 		<div id="logo">
 			<a href="index.php"><img alt="GBCH-Banner" src="Bilder\GBCH_Banner.png"></a>
@@ -36,11 +35,9 @@ $register = "<text>" . "registrieren / login" . "</text>";
 			</ul>
 		</div>
 	</div>
-	<?php }?>
 
 	<?php
-	error_reporting(0);
-	if ($_SESSION["logedin"] = true){
+	} else {
 	$username = $_SESSION['Username'];
 	?>
 	<div id="container">

@@ -1,6 +1,6 @@
 <?php
-include_once 'Menu_with_Banner.php';
 session_start();
+include_once 'Menu_with_Banner.php';
 ?>
 <!DOCTYPE html>
 <html>
