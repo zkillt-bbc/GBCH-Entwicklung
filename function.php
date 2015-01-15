@@ -7,14 +7,14 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
  */
 function dbConnect($close=true){
 
+	$link = mysql_connect("localhost", "root", "") or die('Could not connect to MySQL DB ') . mysql_error();
+	if (!mysql_select_db("gbch_data", $link))
+		return false;
+	
 	if (!$close) {
 		mysql_close($link);
 		return true;
 	}
-
-	$link = mysql_connect("localhost", "root", "") or die('Could not connect to MySQL DB ') . mysql_error();
-	if (!mysql_select_db("gbch_data", $link))
-		return false;
 }
 
 /**

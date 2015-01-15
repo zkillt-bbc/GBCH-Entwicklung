@@ -1,20 +1,27 @@
 <?php
+session_start();
 if (isset( $_SERVER['HTTP_X_REQUESTED_WITH'] )):
 	include('config.php');
 	include('function.php');
-	dbConnect();
 	
-	if (!empty($_POST['name']) AND !empty($_POST['mail']) AND !empty($_POST['comment']) AND !empty($_POST['postid'])) {
-		$name = mysql_real_escape_string($_POST['name']);
-		$mail = mysql_real_escape_string($_POST['mail']);
-		$comment = mysql_real_escape_string($_POST['comment']);
-		$postId = mysql_real_escape_string($_POST['postid']);
+	$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
+		
+	if (!empty($_POST['comment']))
+	{
+		$username = $_SESSION['Username'];
+		$comment = $_POST['comment'];
 
-		mysql_query("
+		$query = "
 			INSERT INTO comment
-			(name, mail, comment, post_id)
-			VALUES('{$name}', '{$mail}', '{$comment}', '{$postId}')");			
+			(id, username, comment)
+			VALUES(null, '{$username}', '{$comment}')";			
 	}
+	
+	$mysqli->query($query);
+	
+	$mail = mysql_query("select Mail from registration where Username = '{$_SESSION["Username"]}'");
+	#$postId = mysql_query("select id from comment where Username = '{$_SESSION["Username"]}'");
+	#$comment = mysql_query("select comment from registration where id = {$postId}");	
 ?>
 
 <div class="comment-item">
@@ -22,8 +29,8 @@ if (isset( $_SERVER['HTTP_X_REQUESTED_WITH'] )):
 		<img src="<?php echo avatar($mail) ?>" alt="avatar">
 	</div>
 	<div class="comment-post">
-		<h3><?php echo $name ?> <span>said....</span></h3>
-		<p><?php echo $comment?></p>
+		<h3><?php echo $_SESSION["Username"] ?> <span>said....</span></h3>
+		<p><?php echo $comment ?></p>
 	</div>
 </div>
 

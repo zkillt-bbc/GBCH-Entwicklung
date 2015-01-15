@@ -38,7 +38,7 @@ require_once 'Menu_with_Banner.php';
 					<input id="Username" name="Username" placeholder="Username" required/></br></br>
 					<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" reguired/></br></br>		
 					<input type="submit" value="Login"/>
-					<p>Login Fehlgeschlagen!</p>
+					<span class = "login_failed"><p>Login Fehlgeschlagen!</p></span>
 				</form>
 			</div>
 		</div>

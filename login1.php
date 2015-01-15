@@ -21,16 +21,17 @@ while($zeile = $result->fetch_array())
 		$_SESSION["logedin"] = true;
 		//Auch andere Infos aus der DB kann
 		//man in der Session speichern
-		$_SESSION['Name'] = $zeile["Name"]; //Der Name z.B.
-		$_SESSION['Vorname'] = $zeile["Vorname"]; 
+		$_SESSION['Username'] = $zeile["Username"]; //Der Name z.B.
+		$_SESSION['Passwort'] = $zeile['Passwort']; 
 		break;
 	}
 }
 //In diesem Styl kannst du überall die Session Infos abrufen:
 if($_SESSION["logedin"]){
-echo "Hallo ".$_SESSION["Vorname"].", du bist eingeloggt";
-
-header('Location: user.php');
+include 'Menu_with_Banner';
+include 'eintragen.php';
+$register = $name;
+header('Location: index.php');
 
 } else {
 	header ("Location: login_fail.php");

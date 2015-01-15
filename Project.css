@@ -298,9 +298,20 @@ ul li ul li:hover {
 	background-color: #D6D6D6;	
 }
 .Youtube_Video iframe {
-	margin: -10px 0px 20px 520px;
+	margin: 0 auto;
 }
 
 iframe {
 	float:left;
+}
+
+.username_vergeben
+{
+	margin: -20px 0px 0px 0px;
+	color: red;
+}
+
+.login_failed
+{
+	color: red;
 }

@@ -9,9 +9,23 @@ $geburtsdatum = $_POST['Geburtsdatum'];
 // neue Datenbankverbindung
 $mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
 
+$query = "select * from registration";
+
+$result = $mysqli->query($query);
+
+while($zeile = $result->fetch_array())
+{
+	if(($username = $zeile["Username"]))
+	{
+		header ("Location: username_vorhanden.php");
+	}
+	else
+	{
 $query = 'insert into registration (Benutzer_ID, Username, Nachname, Vorname, Mail, Passwort, Geburtsdatum)
 		values (null,"'.$username.'","'.$nachname.'","'.$vorname.'","'.$mail.'",md5("'.$passwort.'"),"'.$geburtsdatum.'");';
 
 $mysqli->query($query);
-header ("Refresh: 0; url=index.php");
+header ("Location: index.php");
+	}
+}
 ?>
