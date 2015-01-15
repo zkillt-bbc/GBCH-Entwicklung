@@ -53,3 +53,30 @@
 .close:hover { 
 	background: #00d9ff; 
 }
+
+.upload {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3px;
+	margin-bottom: 20px;
+}
+
+.ChangeAvatar input[type="submit"] {
+	float: right;
+	margin-top: -20px;
+}
+
+.ChangeAvatar h2 {
+	margin-bottom: 5px;
+}
+
+.ChangeAvatar img {
+	float: right;
+	margin-top: -58px;
+}
+
+.ChangeAvatar p {
+	font-size: 9px;
+	margin-bottom: 1px;
+	margin-right: 200px;
+}
