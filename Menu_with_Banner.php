@@ -7,7 +7,9 @@
 <link href="Project.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<?php if ($_SESSION["logedin"] == false) {?>
+	<?php 
+	error_reporting(0);
+	if ($_SESSION["logedin"] == false) {?>
 	<div id="container">
 		<div id="logo">
 			<a href="index.php"><img alt="GBCH-Banner" src="Bilder\GBCH_Banner.png"></a>
@@ -63,7 +65,7 @@
 					</ul>
 				</li>
 				<li><a href="Kontakt.php">Kontakt</a>
-				<li><a href="Registration.php"><span class = "anmeldung"><?php echo $username ?></span></a></li>
+				<li><a href="userhome.php"><span class = "username"><?php echo $username ?></span></a></li>
 			</ul>
 		</div>
 	</div>

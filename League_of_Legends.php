@@ -12,7 +12,7 @@ include_once 'Menu_with_Banner.php';
 <body>
 	<div id="container">
 		<div class = "seite">
-			<img alt="League of Legends #1 Top Laner" src="Bilder\League_of_Legends.png">
+			<span class = "thumbnail"><img alt="League of Legends #1 Top Laner" src="Bilder\League_of_Legends.png" width=300px height=180px></span>
 			<div class = news>
 				<text>
 					<a href="http://www.gbch.ch/games/league_of_legends">League of Legends</a></br></br>
@@ -22,7 +22,7 @@ include_once 'Menu_with_Banner.php';
 						der Bot mit Lucian. </br></br></br></br></br>
 				</text>
 			</div>		
-			<img alt="League of Legends #1 Top Laner" src="Bilder\League_of_Legends.png">
+			<span class = "thumbnail"><img alt="League of Legends #1 Top Laner" src="Bilder\League_of_Legends.png" width=300px height=180px></span>
 			<div class = news>
 				<text>
 					<a href="http://www.gbch.ch/games/league_of_legends">League of Legends</a></br></br>

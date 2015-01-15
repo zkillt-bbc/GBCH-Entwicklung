@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require_once 'Menu_with_Banner.php';
+?>
 <!doctype html>
 <html>
 <head>
@@ -7,13 +11,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
-<?php 
-session_start();
-require_once 'Menu_with_Banner.php';
-?>
 <body>
 	<div class = "Youtube_Video">
-	<iframe width="560" height="315" src="//www.youtube.com/embed/6mcVZeyluv8?list=UUngttbGHZE6vBamuevGFmQw" frameborder="0" allowfullscreen></iframe></body>--
+		<iframe width="560" height="315" src="//www.youtube.com/embed/6mcVZeyluv8?list=UUngttbGHZE6vBamuevGFmQw" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="wrap">
 	<?php
@@ -55,16 +55,6 @@ require_once 'Menu_with_Banner.php';
 		
 		
 		<form id="form" method="post" action="ajax_comment.php">
-			<!-- need to supply post id with hidden fild -->
-			<!-- <input type="hidden" username="postid" value=" echo $row['post_id']">
-			<label>
-				<span>username *</span>
-				<input type="text" username="username" id="comment-username" placeholder="Your username here...." required>
-			</label>
-			<label>
-				<span>Email *</span>
-				<input type="email" username="mail" id="comment-mail" placeholder="Your mail here...." required>
-			</label>-->
 			<label>
 				<span>Your comment *</span>
 				<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here...." required></textarea>
