@@ -94,7 +94,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 			<li><a href="userhome.php"><span class="register"><?php echo $username ?></span></a>
 				<ul>
 					<li>
-						<a href="../ressources/logout.php">Logout</a>
+						<span class = "logout"><a href="../ressources/logout.php">Logout</a></span>
 					</li>
 				</ul>
 			</li>
