@@ -2,6 +2,7 @@
 
 html {
 	background-image: url("../ressources/Bilder/particles.png");
+	overflow: hidden;
 }
 
 body {
@@ -265,7 +266,7 @@ iframe {
 	float: left;
 	height: 450px;
 	width: 1000px;
-	margin: -45px 0px 0px 0px;
+	margin: 15px 0px 0px 0px;
 	background-color: #D6D6D6;
 }
 
@@ -274,6 +275,18 @@ iframe {
 	float:left;
 	margin: 20px 0px 0px 20px;
 	border-radius: 15px;
+}
+
+.bw {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
 }
 
 .userhome .kontakt
@@ -673,7 +686,8 @@ iframe {
   #cssmenu > ul > li.has-sub > a:after,
   #cssmenu > ul > li.has-sub > a:before,
   #cssmenu ul ul > li.has-sub > a:after,
-  #cssmenu ul ul > li.has-sub > a:before {
+  #cssmenu ul ul > li.has-sub > a:before 
+  {
     display: none;
   }
   #cssmenu #menu-button {
@@ -794,4 +808,14 @@ iframe {
 .register {
 	float: right;
 	padding-left: 100px;	
+}
+
+.login_home input
+{
+	margin-top:5px;
+}
+
+.login_submit input 
+{
+	margin-bottom: -7px;
 }

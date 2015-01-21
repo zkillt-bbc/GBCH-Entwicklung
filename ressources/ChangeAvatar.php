@@ -1,14 +1,13 @@
 <?php
 ?>
-<link rel="stylesheet" href="Project.css">
+<link rel="stylesheet" href="../css/Project.css">
 
 <!-- Code von Popup -->
-<a href="#openAvatar">Avatar &auml;ndern</a>
 <div id="openAvatar" class="ChangeAvatar">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
 		<h2>Avatar &auml;ndern</h2><br>
-		<img src="AvatarBilder/Test.jpg" style="width:100px;height:100px"><br><br><br>
+		<img src="../ressources/Bilder/none.jpg" style="width:100px;height:100px"><br><br><br>
 		
 		<!-- Upload -->
 		<form action="upload.php" method="post" enctype="multipart/form-data">
