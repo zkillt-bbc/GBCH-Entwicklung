@@ -25,6 +25,12 @@ body {
 	display: block;
 }
 
+#logo {
+	float: left;
+	width: 250px;
+	margin: 0px 0px -5px 0px;
+}
+
 #header {
 	background-image: url("../ressources/Bilder/FarCry4.png");
 	height: 325px;
@@ -787,6 +793,5 @@ iframe {
 
 .register {
 	float: right;
-	margin-left: 250px;
-	
+	padding-left: 100px;	
 }
