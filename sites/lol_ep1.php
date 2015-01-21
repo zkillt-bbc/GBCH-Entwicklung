@@ -35,7 +35,8 @@ require_once '../ressources/Menu_with_Banner.php';
 		// retrive comments with post id
 		$comment_query = mysql_query(
 			"SELECT *
-			FROM comment");
+			FROM comment
+			ORDER BY id DESC");
 	?>
 		<h2>Comments.....</h2>
 		<div class="comment-block">
@@ -83,7 +84,8 @@ require_once '../ressources/Menu_with_Banner.php';
 					// retrive comments with post id
 					$comment_query = mysql_query(
 						"SELECT *
-						FROM comment");
+						FROM comment
+						ORDER BY id DESC");
 				?>
 				
 			
