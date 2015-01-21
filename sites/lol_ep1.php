@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>jQuery Ajax Comment System - Demo</title>
+	<title>GBCH - League of Legends Ep. 1</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link href="../css/Project.css" type="text/css" rel="stylesheet" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -42,7 +42,7 @@ require_once '../ressources/Menu_with_Banner.php';
 		<?php while($comment = mysql_fetch_array($comment_query)): ?>
 			<div class="comment-item">
 				<div class="comment-avatar">
-					<img src="Bilder/none.jpg" alt="avatar">
+					<img src="../ressources/Bilder/none.jpg" alt="avatar">
 				</div>
 				<div class="comment-post">
 					<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
