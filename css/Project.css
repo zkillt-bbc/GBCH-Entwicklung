@@ -823,17 +823,11 @@ iframe {
 .kleiner_text
 {
 	font-size: 12px;
-	margin-left: 93px;
+	margin-left: 80px;
 	
 }
 
 .kleiner_text a
 {
 	font-size: 12px;
-}
-
-.logout
-{
-	float:right;
-	margin-right: -247px;
 }
