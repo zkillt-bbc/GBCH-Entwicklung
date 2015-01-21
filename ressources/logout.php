@@ -7,5 +7,5 @@ if($_SESSION["logedin"]) {
 }
 else
 {
-	header("Location: index.php");
+	header("Location: ../sites/index.php");
 }

@@ -60,9 +60,11 @@ require_once '../ressources/Menu_with_Banner.php';
 				<span>Your comment *</span>
 				<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here...." required></textarea>
 			</label>
+		<div id="comment_submit" class="comment_submit">
 			<input type="submit" id="submit" value="Submit Comment">
+		</div>
 		</form>	
-		<p><a href="logout.php">log out</a></p>
+		<p><a href="../ressources/logout.php">log out</a></p>
 		<?php }
 		else	
 		{
