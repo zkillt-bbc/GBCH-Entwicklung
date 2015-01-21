@@ -7,7 +7,7 @@ session_start ();
 <meta charset="UTF-8">
 <title>GBCH - League of Legends</title>
 <link rel="shortcut icon" href="../ressources/Bilder/GBCH_Browser_image.png" type="image/x-icon">
-<link href="../ressources/Project.css" type="text/css" rel="stylesheet" />
+<link href="../css/Project.css" type="text/css" rel="stylesheet" />
 </head>
 
 <?php

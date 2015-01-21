@@ -54,7 +54,9 @@ $register = "<text>" . "registrieren / login" . "</text>";
 	<!-- Menu -->
 	<div id="cssmenu">
 		<ul>
-
+		<div id="logo">
+			<a href="../sites/index.php"><img alt="GBCH-Banner" src="../ressources/Bilder/GBCH_Banner.png" width="250px" height="49px"></a>
+		</div>
 			<li><a href="Games.php">Games</a>
 				<ul>
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
@@ -74,7 +76,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 
 			<li><a href="Kontakt.php">Kontakt</a>
 			
-			<li><a href="Registration.php"><?php echo $username ?></a></li>
+			<li><a href="Registration.php"><span class="register"><?php echo $username ?></span></a></li>
 
 		</ul>
 	</div>

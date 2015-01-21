@@ -1,16 +1,15 @@
-<?php
-require_once 'Menu_with_Banner.php';
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>GBCH - Kontakt</title>
-<link href="Project.css" type="text/css" rel="stylesheet" />
+<link href="../css/Project.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+	<?php
+		require_once '../ressources/Menu_with_Banner.php';
+		session_start();
+	?>
 	<div id="container">
 		<div class = seite>
 			<div class = "registration">
