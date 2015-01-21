@@ -19,10 +19,12 @@ $register = "<text>" . "registrieren / login" . "</text>";
 	<!-- Menu -->
 	<div id="cssmenu">
 		<ul>
-				<!-- GBCH Banner vor dem Menuband -->
-		<div id="logo">
-			<a href="../sites/index.php"><img alt="GBCH-Banner" src="../ressources/Bilder/GBCH_Banner.png" width="250px" height="65px"></a>
-		</div>			
+			<!-- GBCH Banner vor dem Menuband -->
+			<div id="logo">
+				<a href="../sites/index.php"><img alt="GBCH-Banner"
+					src="../ressources/Bilder/GBCH_Banner.png" width="250px"
+					height="65px"></a>
+			</div>
 			<li><a href="Games.php">Games</a>
 				<ul>
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
@@ -38,21 +40,24 @@ $register = "<text>" . "registrieren / login" . "</text>";
 					<li><a href="#">Samu</a></li>
 				</ul></li>
 
-			<li><a href="../sites/Kontakt.php">Kontakt</a></li>					
-<!-- 			<li><a href="Registration.php"><span class="register">Register / -->
-<!-- 						Login</span></a></li> -->
-					<div class = "login_home">
-						<form action="../ressources/login1.php" method="post">
-						<input id="Username" name="Username" placeholder="Username" size="15" required/>
-						<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" size="15" required/>
-					<div class = "login_submit">
-						<input type="submit" value="Login"/>
-						<span class = "kleiner_text">Klicke zum <a href="../sites/Registration.php">registrieren</a></span>
+			<li><a href="../sites/Kontakt.php">Kontakt</a></li>
+			<!-- 			<li><a href="Registration.php"><span class="register">Register / -->
+			<!-- 						Login</span></a></li> -->
+			<div class="login_home">
+				<form action="../ressources/login1.php" method="post">
+					<input id="Username" name="Username" placeholder="Username"
+						size="15" required /> <input id="Passwort" name="Passwort"
+						type="password" placeholder="Passwort" size="15" required />
+					<div class="login_submit">
+						<input type="submit" value="Login" /> <span class="kleiner_text">Klicke
+							zum <a href="../sites/Registration.php">registrieren</a>
+						</span>
 					</div>
-					</form>
+				</form>
+			</div>
+		
 		</ul>
-					</div>
-					</div>			
+	</div>
 
 	<!-- if user is logged in -->
 	<?php
@@ -62,9 +67,11 @@ $register = "<text>" . "registrieren / login" . "</text>";
 	<!-- Menu -->
 	<div id="cssmenu">
 		<ul>
-		<div id="logo">
-			<a href="../sites/index.php"><img alt="GBCH-Banner" src="../ressources/Bilder/GBCH_Banner.png" width="250px" height="49px"></a>
-		</div>
+			<div id="logo">
+				<a href="../sites/index.php"><img alt="GBCH-Banner"
+					src="../ressources/Bilder/GBCH_Banner.png" width="250px"
+					height="49px"></a>
+			</div>
 			<li><a href="Games.php">Games</a>
 				<ul>
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
@@ -84,8 +91,13 @@ $register = "<text>" . "registrieren / login" . "</text>";
 
 			<li><a href="Kontakt.php">Kontakt</a>
 			
-			<li><a href="userhome.php"><span class="register"><?php echo $username ?></span></a></li>
-
+			<li><a href="userhome.php"><span class="register"><?php echo $username ?></span></a>
+				<ul>
+					<li>
+						<a href="../ressources/logout.php">Logout</a>
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 	<?php }?>
