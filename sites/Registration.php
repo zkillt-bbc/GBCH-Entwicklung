@@ -17,7 +17,7 @@
 					<newsTitle>Registration</newsTitle>
 				</div>
 			<div class = formular>
-				<form action="./ressources/eintragen.php" method="post">
+				<form action="../ressources/eintragen.php" method="post">
 					<input id="Username" name="Username" placeholder="Username" required/><br><br>
 					<input id="Name" name="Name" placeholder="Nachname" required/><br><br>
 					<input id="Vorname" name="Vorname" placeholder="Vorname" required/><br><br>
