@@ -817,5 +817,17 @@ iframe {
 
 .login_submit input 
 {
-	margin-bottom: -7px;
+	margin-bottom: -10px;
+}
+
+.kleiner_text
+{
+	font-size: 12px;
+	margin-left: 80px;
+	
+}
+
+.kleiner_text a
+{
+	font-size: 12px;
 }

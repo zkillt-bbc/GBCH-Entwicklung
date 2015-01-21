@@ -21,7 +21,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 		<ul>
 				<!-- GBCH Banner vor dem Menuband -->
 		<div id="logo">
-			<a href="../sites/index.php"><img alt="GBCH-Banner" src="../ressources/Bilder/GBCH_Banner.png" width="250px" height="61px"></a>
+			<a href="../sites/index.php"><img alt="GBCH-Banner" src="../ressources/Bilder/GBCH_Banner.png" width="250px" height="65px"></a>
 		</div>			
 			<li><a href="Games.php">Games</a>
 				<ul>
@@ -47,6 +47,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 						<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" size="15" required/>
 					<div class = "login_submit">
 						<input type="submit" value="Login"/>
+						<span class = "kleiner_text">Klicke zum <a href="../sites/Registration.php">registrieren</a></span>
 					</div>
 					</form>
 		</ul>
