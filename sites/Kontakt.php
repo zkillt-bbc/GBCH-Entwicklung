@@ -8,6 +8,7 @@ include_once '../ressources/Menu_with_Banner.php';
 <head>
 <meta charset="UTF-8">
 <title>GBCH - Kontakt</title>
+<link rel="shortcut icon" href="../ressources/Bilder/GBCH_Browser_image.png" type="image/x-icon">
 <link href="../css/Project.css" type="text/css" rel="stylesheet" />
 </head>
 

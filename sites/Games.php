@@ -6,7 +6,7 @@ include_once '../ressources/Menu_with_Banner.php';
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GBCH - League of Legends</title>
+<title>GBCH - Games</title>
 <link href="../css/Project.css" type="text/css" rel="stylesheet" />
 </head>
 
