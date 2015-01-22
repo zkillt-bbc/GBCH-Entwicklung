@@ -815,7 +815,7 @@ iframe {
 	margin-top:5px;
 }
 
-.login_submit input 
+.login_submit input[type="submit"]
 {
 	margin-bottom: -10px;
 }
@@ -823,7 +823,7 @@ iframe {
 .kleiner_text
 {
 	font-size: 12px;
-	margin-left: 93px;
+	margin-left: 103px;
 	
 }
 

@@ -30,7 +30,8 @@ $register = "<text>" . "registrieren / login" . "</text>";
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
 					<li><a href="#">Deadspace 3</a></li>
 					<li><a href="League_of_Legends.php">League of Legends</a></li>
-				</ul></li>
+				</ul>
+			</li>
 
 			<li><a href="#">Special</a></li>
 			<li><a href="#">Sprecher</a>
@@ -49,8 +50,10 @@ $register = "<text>" . "registrieren / login" . "</text>";
 						size="15" required /> <input id="Passwort" name="Passwort"
 						type="password" placeholder="Passwort" size="15" required />
 					<div class="login_submit">
-						<input type="submit" value="Login" /> <span class="kleiner_text">Klicke
-							zum <a href="../sites/Registration.php">registrieren</a>
+						<input type="submit" value="Login" />
+						
+						<span class="kleiner_text">
+							Klicke zum <a href="../sites/Registration.php">registrieren</a>
 						</span>
 					</div>
 				</form>

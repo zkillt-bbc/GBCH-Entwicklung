@@ -16,12 +16,9 @@ html
 	text-rendering: optimizeLegibility;
 }
 body{
-	font: 12px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
-	text-transform: inherit;
-	color: #333;
+	font-family: Montserrat, Arial, sans-serif;
 	background-image: url("Bilder/particles.png");
 	width: 100%;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 }
 .wrap{
 	width: 1000px;
@@ -35,7 +32,10 @@ body{
 	overflow: hidden;
 }
 
-a{ text-decoration: none; color: #333}
+a{ 
+	text-decoration: none; color: #333
+}
+
 h1{
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 2.8em;
@@ -119,7 +119,7 @@ textarea {
 	height:100px;
 	max-width:100%;
 }
-input[type="submit"] {
+.comment_submit input[type="submit"] {
 	cursor:pointer;
 	width:100%;
 	border:none;
@@ -132,7 +132,7 @@ input[type="submit"] {
 	padding:10px;
 	border-radius:5px;
 }
-input[type="submit"]:hover {
+.comment_submit input[type="submit"]:hover {
 	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
 	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
 	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
@@ -140,7 +140,7 @@ input[type="submit"]:hover {
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
-input[type="submit"]:active {
+.comment_submit input[type="submit"]:active {
 	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
 }
 input:focus,
