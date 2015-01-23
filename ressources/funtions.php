@@ -6,4 +6,3 @@
 		$result = $mysqli->query($query);
 		$insertion = "UPDATE registration SET Username = $_POST['Username'] WHERE Username = $_SESSION['Username']";
 	}
-?>

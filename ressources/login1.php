@@ -31,6 +31,6 @@ if($_SESSION["logedin"]){
 header('Location: ../sites/index.php');
 
 } else {
-	header ("Location: login_fail.php");
+	header ("Location: ../sites/login_fail.php");
 }
 ?>
