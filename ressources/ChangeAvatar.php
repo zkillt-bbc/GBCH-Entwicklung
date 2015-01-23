@@ -1,5 +1,4 @@
 <?php
-include_once 'GBCH-Entwicklung/js/funtions.js';
 ?>
 <link rel="stylesheet" href="../css/Project.css">
 
@@ -10,7 +9,8 @@ include_once 'GBCH-Entwicklung/js/funtions.js';
 		<h2>Avatar &auml;ndern</h2><br>
 		<img src="../ressources/Bilder/none.jpg" style="width:100px;height:100px"><br><br><br>
 		
-		<!-- Upload -->		<form action="../ressources/upload.php" method="post" enctype="multipart/form-data">
+		<!-- Upload -->
+		<form action="upload.php" method="post" enctype="multipart/form-data">
 			<div id="upload" class="upload">
 		    	<input type="file" name="fileToUpload" id="fileToUpload">
 			</div>		
@@ -20,3 +20,4 @@ include_once 'GBCH-Entwicklung/js/funtions.js';
 		</form>
 	</div>
 </div>
+

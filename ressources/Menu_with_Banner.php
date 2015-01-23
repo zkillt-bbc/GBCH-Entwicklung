@@ -22,7 +22,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 			<!-- GBCH Banner vor dem Menuband -->
 			<div id="logo">
 				<a href="../sites/index.php"><img alt="GBCH-Banner"
-					src="../ressources/Bilder/banner_text.png" width="150px" height="50px" 
+					src="../ressources/Bilder/GBCH_Banner.png" width="250px"
 					height="65px"></a>
 			</div>
 			<li><a href="Games.php">Games</a>
@@ -48,10 +48,11 @@ $register = "<text>" . "registrieren / login" . "</text>";
 					<input id="Username" name="Username" placeholder="Username"
 						size="15" required /> <input id="Passwort" name="Passwort"
 						type="password" placeholder="Passwort" size="15" required />
-					<span class="login_submit">
-						<input type="submit" value="Login" />
-					</span>
-					<div class="kleiner_text">Klicke zum <a href="../sites/Registration.php">registrieren</a></div>
+					<div class="login_submit">
+						<input type="submit" value="Login" /> <span class="kleiner_text">Klicke
+							zum <a href="../sites/Registration.php">registrieren</a>
+						</span>
+					</div>
 				</form>
 			</div>
 		
@@ -68,7 +69,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 		<ul>
 			<div id="logo">
 				<a href="../sites/index.php"><img alt="GBCH-Banner"
-					src="../ressources/Bilder/banner_text.png" width="150px" height="50px"
+					src="../ressources/Bilder/GBCH_Banner.png" width="250px"
 					height="49px"></a>
 			</div>
 			<li><a href="Games.php">Games</a>
