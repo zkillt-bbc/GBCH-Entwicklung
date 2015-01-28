@@ -85,8 +85,17 @@ a {
 	float: left;
 	width: 1000px;
 	background-color: #D6D6D6;
-	margin-top: 15px;
+	margin: 15px auto;
 	padding-bottom: 15px;
+}
+
+.seite2 {
+	width: 1000px;
+	background-color: #D6D6D6;
+	margin: 15px auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
 }
 
 #aktuelle_videos img {
@@ -176,7 +185,6 @@ a {
 	height: 200px;
 	width: 120px;
 	margin: 0px 80px 20px 20px;
-	position:relative;
 	-webkit-transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
 	-o-transition: all 0.25s ease;
@@ -280,8 +288,13 @@ iframe {
 
 .userhome img {
 	float: left;
-	margin: 20px 0px 0px 20px;
+	margin: 15px 0px 0px 20px;
 	border-radius: 15px;
+}
+
+.avatar span.display
+{
+	margin-top: 55px;
 }
 
 .bw {
@@ -290,8 +303,22 @@ iframe {
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	}
+
+.avatar
+{
+	width:100%;
+	height: 130px;
+	border-bottom: 1px groove;
+	border-top: 1px groove;
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 
+h4
+{
+	margin-left: 20px;
+}
 .bw:hover {
 	-webkit-filter: grayscale(100%);
 }
@@ -304,7 +331,8 @@ iframe {
 
 .display {
 	float: left;
-	margin: 50px 0px 0px 20px;
+	margin: 20px 0px 0px 20px;
+	padding-bottom: 20px;
 }
 
 .username {

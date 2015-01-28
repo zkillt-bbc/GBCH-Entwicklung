@@ -1,4 +1,7 @@
 <?php
+session_start();
+$filename = '../ressources/Bilder/uploads/'  . $_SESSION['Username'] . '.png';
+file_exists($filename);
 include_once 'GBCH-Entwicklung/js/funtions.js';
 ?>
 <link rel="stylesheet" href="../css/Project.css">
@@ -8,7 +11,14 @@ include_once 'GBCH-Entwicklung/js/funtions.js';
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
 		<h2>Avatar &auml;ndern</h2><br>
-		<img src="../ressources/Bilder/none.jpg" style="width:100px;height:100px"><br><br><br>
+		<?php if (file_exists($filename))
+		{?>
+			<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
+		<?php }
+		else 
+		{?>
+			<img src="../ressources/Bilder/uploads/none.jpg" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
+		<?php }?>
 		
 		<!-- Upload -->		<form action="../ressources/upload.php" method="post" enctype="multipart/form-data">
 			<div id="upload" class="upload">
