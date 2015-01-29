@@ -1,3 +1,7 @@
+<head>
+<meta charset="ISO-8859-1">
+</head>
+
 <?php 
 session_start();
 $string = str_replace("image/", "", "image/png");

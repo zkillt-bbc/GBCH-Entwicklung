@@ -40,39 +40,45 @@ if (file_exists ( $filename ))
 		<!-- chooses the user avatar -->
 			<div class="avatar">
 				<div class="bw pic">
-					<a href="#openAvatar"><img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar" width="100px" height="100px"></a>
+					<a href="#openAvatar"><img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar" width="160px" height="160px"></a>
 				</div>
-				<span class = "display">Klicke auf das Bild um den Avatar zu &auml;ndern.</span><br><br><br><br><br><br>
-				<h4>Details</h4>
+				<div class = "display">Klicke auf das Bild um den Avatar zu &auml;ndern.</div>
+			</div>
 			</div>
 		<?php
-	
 } else {
 		?>
-		
+		<h4>Avatar</h4>
+		<div class="avatar">
 		<!-- the default avatar if no user avatar is set -->
 			<div class="bw pic">
-				<a href="#openAvatar"><img
-					src="../ressources/Bilder/uploads/none.jpg" alt="avatar"
-					width="100px" height="100px"></a>
-			</div>		
+				<a href="#openAvatar"><img src="../ressources/Bilder/uploads/none.jpg" alt="avatar"width="100px" height="100px"></a>
+			</div>
+			<div class = "display">Klicke auf das Bild um den Avatar zu &auml;ndern.</div>
+		</div>
 		<?php }?>
 				
 <?php	
-$username = $_SESSION["Username"];
+$username = $_SESSION['Username'];
 $db = $mysqli = new mysqli ( "localhost", "root", "", "gbch_data", "3307" );
 $vorname = "SELECT * FROM registration WHERE Username =  '$username'";
 $rs = $db->query ( $vorname );
 $row = $rs->fetch_array ();
 ?>
-<div class="display">
-<?php echo $row['Username'];?> <br><br>
-<?php echo $row['Nachname'];?> <br><br>
-<?php echo $row['Vorname'];?> <br><br>
-<?php echo $row['Mail'];?> <br><br>
-<?php echo $row['Geburtsdatum'];?> <br><br>	
-</div>	
-			</div>
+<div class = "avatar2">
+	<h4>Details</h4>
+		<div class="display"><br>
+			<form action="../ressources/change.php" method="post" accept-charset="ISO-8859-1">
+				Username:<br> <input id="Username" name="Username" value="<?php echo $row['Username'];?>" readonly="readonly"/><br><br>
+				Nachname:<br> <input id="Nachname" name="Nachname" value="<?php echo $row['Nachname'];?>" readonly="readonly"/> <br><br>
+				Vorname:<br> <input id="Vorname" name="Vorname" value="<?php echo $row['Vorname'];?>" readonly="readonly"/> <br><br>
+				Email:<br> 	<input id="Mail" name="Mail" value="<?php echo $row['Mail'];?>"/><br><br>
+				Geburtsdatum:<br> <input id="Geburtsdatum" name="Gebutsdatum" value="<?php echo $row['Geburtsdatum'];?>" readonly="readonly"/> <br><br>	
+				<input id="submit" type="submit" name="submit" value="&Auml;nderungen speichern" /><br>
+				
+			</form>
+		</div>
+	</div>	
 		</div>
 	</div>
 </body>

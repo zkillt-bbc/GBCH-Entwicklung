@@ -43,7 +43,7 @@ require_once '../ressources/Menu_with_Banner.php';
 		<?php while($comment = mysql_fetch_array($comment_query)): ?>
 			<div class="comment-item">
 				<div class="comment-avatar">
-					<img src="../ressources/Bilder/none.jpg" alt="avatar">
+					<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar">
 				</div>
 				<div class="comment-post">
 					<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
@@ -94,7 +94,7 @@ require_once '../ressources/Menu_with_Banner.php';
 					<?php while($comment = mysql_fetch_array($comment_query)): ?>
 						<div class="comment-item">
 							<div class="comment-avatar">
-								<img src="../ressources/Bilder/none.jpg" alt="avatar">
+								<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar">
 							</div>
 							<div class="comment-post">
 								<h3><?php echo $comment['username'] ?> <span>said....</span></h3>

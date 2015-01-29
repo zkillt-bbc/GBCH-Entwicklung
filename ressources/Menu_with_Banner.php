@@ -4,7 +4,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="ISO-8859-1">
 <title>GBCH - League of Legends</title>
 <link href="css/Project.css" type="text/css" rel="stylesheet" />
 </head>
