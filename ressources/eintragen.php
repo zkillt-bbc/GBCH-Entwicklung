@@ -17,8 +17,8 @@ while($zeile = $result->fetch_array())
 {
 	if(($username != $zeile["Username"]))
 	{
-		$query = 'insert into registration (Benutzer_ID, Username, Nachname, Vorname, Mail, Passwort, Geburtsdatum)
-			values (null,"'.$username.'","'.$nachname.'","'.$vorname.'","'.$mail.'",md5("'.$passwort.'"),"'.$geburtsdatum.'");';
+		$query = 'insert into registration (Benutzer_ID, Username, Nachname, Vorname, Mail, Passwort, Geburtsdatum, Avatar)
+			values (null,"'.$username.'","'.$nachname.'","'.$vorname.'","'.$mail.'",md5("'.$passwort.'"),"'.$geburtsdatum.'","../ressources/Bilder/uploads/none.jpg");';
 		
 		$mysqli->query($query);
 		header ("Location: ../sites/index.php");

@@ -4,12 +4,14 @@
 
 <?php 
 session_start();
+$aktuell = $_SESSION['Username'];
 $string = str_replace("image/", "", "image/png");
 $target_dir = "Bilder/uploads/";
 $target_file = $target_dir . basename ( $_FILES ["fileToUpload"] ["name"] );
 $uploadOk = 1;
 $imageFileType = pathinfo ( $target_file, PATHINFO_EXTENSION );
 // Check if image file is a actual image or fake image
+clearstatcache();
 if (isset ( $_POST ["submit"] )) {
 	$check = getimagesize ( $_FILES ["fileToUpload"] ["tmp_name"] );
 	if ($check !== false) {
@@ -53,8 +55,7 @@ if ($uploadOk == 0) {
 		
 		$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
 		
-		$query = 'insert into registration (Avatar)
-			values ("'.$umbenannt.'") where Username = "'.$_SESSION["Username"].'"';
+		$query = 'UPDATE registration SET Avatar = "../ressources/" "'.$umbenannt.'" WHERE Username = "'.$aktuell.'";';
 		
 		$mysqli->query($query);
 		header ("Refresh: 3; url = ../sites/userhome.php");

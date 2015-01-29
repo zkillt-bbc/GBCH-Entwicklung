@@ -248,12 +248,14 @@ a {
 
 .Youtube_Video {
 	margin: 20px auto 20px auto;
-	width: 560px;
-	height: 315px;
+	width: 1000px;
+	height: 560px;
 }
 
-iframe {
+.Youtube_Video iframe {
 	border: medium;
+	width: 1000px;
+	height: 560px;
 }
 
 .username_vergeben {
@@ -882,6 +884,7 @@ h4
 }
 
 .login_submit input {
+	
 	margin-bottom: -10px;
 }
 

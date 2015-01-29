@@ -49,7 +49,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 						size="15" required /> <input id="Passwort" name="Passwort"
 						type="password" placeholder="Passwort" size="15" required />
 					<span class="login_submit">
-						<input type="submit" value="Login" />
+						<input type="submit" name="Submit_login" value="Login" />
 					</span>
 					<div class="kleiner_text">Klicke zum <a href="../sites/Registration.php">registrieren</a></div>
 				</form>

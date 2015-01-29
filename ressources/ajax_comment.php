@@ -1,3 +1,11 @@
+<head>
+	<meta charset="UTF-8" />
+	<title>GBCH - League of Legends Ep. 1</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="../css/Project.css" type="text/css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="../js/script.js"></script>
+</head>
 <?php
 session_start();
 if (isset( $_SERVER['HTTP_X_REQUESTED_WITH'] )):
@@ -20,8 +28,6 @@ if (isset( $_SERVER['HTTP_X_REQUESTED_WITH'] )):
 	$mysqli->query($query);
 	
 	$mail = mysql_query("select Mail from registration where Username = '{$_SESSION["Username"]}'");
-	#$postId = mysql_query("select id from comment where Username = '{$_SESSION["Username"]}'");
-	#$comment = mysql_query("select comment from registration where id = {$postId}");	
 ?>
 
 <div class="comment-item">

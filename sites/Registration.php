@@ -21,7 +21,7 @@
 						<input id="Vorname" name="Vorname" placeholder="Vorname" required /><br> <br> 
 						<input id="Email" name="Email" type="email" placeholder="E-Mail" required /><br> <br> 
 						<input id="Passwort" name="Passwort" type="password" placeholder="Passwort" pattern=".{5,100}" required oninvalid="this.setCustomValidity('Das Passwort muss mindestens 6 Zeichen beinhalten')" /><br> <br> 
-						<input id="Passwort_bestätigen" name="Passwort_bestätigen" type="password" placeholder="Passwort best&auml;tigen" pattern=".{6,100}" required oninvalid="this.setCustomValidity('Das Passwort muss mindestens 6 Zeichen beinhalten')"/><br><br> 
+						<input id="Passwort_bestätigen" name="Passwort_bestätigen" type="password" placeholder="Passwort best&auml;tigen" pattern=".{5,100}" required oninvalid="this.setCustomValidity('Das Passwort muss mindestens 6 Zeichen beinhalten')"/><br><br> 
 						<input id="Geburtsdatum" name="Geburtsdatum" type="date" required><br> <br>
 						<input id="submit" type="submit" name="submit" value="Registrieren" />		
 					</form>

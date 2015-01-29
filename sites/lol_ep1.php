@@ -43,7 +43,7 @@ require_once '../ressources/Menu_with_Banner.php';
 		<?php while($comment = mysql_fetch_array($comment_query)): ?>
 			<div class="comment-item">
 				<div class="comment-avatar">
-					<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar">
+					<img src="../ressources/Bilder/uploads/<?php echo $comment["username"] ?>.png" alt="avatar">
 				</div>
 				<div class="comment-post">
 					<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
@@ -62,10 +62,9 @@ require_once '../ressources/Menu_with_Banner.php';
 				<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here...." required></textarea>
 			</label>
 		<div id="comment_submit" class="comment_submit">
-			<input type="submit" id="submit" value="Submit Comment">
+			<input type="submit" name="submit" id="submit" value="Submit Comment">
 		</div>
 		</form>	
-		<p><a href="../ressources/logout.php">log out</a></p>
 		<?php }
 		else	
 		{
@@ -94,7 +93,7 @@ require_once '../ressources/Menu_with_Banner.php';
 					<?php while($comment = mysql_fetch_array($comment_query)): ?>
 						<div class="comment-item">
 							<div class="comment-avatar">
-								<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar">
+								<img src="../ressources/Bilder/uploads/<?php echo $comment["username"] ?>.png" alt="avatar">
 							</div>
 							<div class="comment-post">
 								<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
