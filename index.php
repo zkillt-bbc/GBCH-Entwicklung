@@ -11,7 +11,7 @@ session_start ();
 </head>
 
 <?php
-include_once '/ressources/Menu_with_Banner.php';
+include_once 'ressources/Menu_with_Banner.php';
 ?>
 
 <body>
@@ -30,6 +30,6 @@ include_once '/ressources/Menu_with_Banner.php';
 </html>
 
 <?php
-include_once '/ressources/News.php';
-include_once '/ressources/Aktuelle_Folgen.php';
+include_once 'ressources/News.php';
+include_once 'ressources/Aktuelle_Folgen.php';
 ?>
