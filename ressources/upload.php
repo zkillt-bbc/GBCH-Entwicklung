@@ -24,6 +24,7 @@ if (isset ( $_POST ["submit"] )) {
 	}
 }
 $umbenannt = $target_dir . $_SESSION["Username"] . "." . $string;
+
 // Check if file already exists
 if (file_exists ( $target_file )) {
 	echo "Sorry, file already exists. ";
@@ -55,7 +56,7 @@ if ($uploadOk == 0) {
 		
 		$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
 		
-		$query = 'UPDATE registration SET Avatar = "../ressources/" "'.$umbenannt.'" WHERE Username = "'.$aktuell.'";';
+		$query = 'UPDATE registration SET Avatar = "'.$umbenannt.'" WHERE Username = "'.$aktuell.'";';
 		
 		$mysqli->query($query);
 		header ("Refresh: 3; url = ../sites/userhome.php");

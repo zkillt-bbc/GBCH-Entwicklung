@@ -1,6 +1,6 @@
 <?php
 session_start ();
-$filename = '../ressources/Bilder/uploads/' . $_SESSION ['Username'] . '.png';
+$filename = '../Bilder/uploads/' . $_SESSION ['Username'] . '.png';
 file_exists ( $filename );
 include_once '../ressources/Menu_with_Banner.php';
 include_once '../ressources/functions.php';

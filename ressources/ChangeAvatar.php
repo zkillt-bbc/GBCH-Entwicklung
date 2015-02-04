@@ -1,6 +1,6 @@
 <?php
 session_start();
-$filename = '../ressources/Bilder/uploads/'  . $_SESSION['Username'] . '.png';
+$filename = '../Bilder/uploads/'  . $_SESSION['Username'] . '.png';
 file_exists($filename);
 include_once 'GBCH-Entwicklung/js/funtions.js';
 ?>
@@ -13,11 +13,11 @@ include_once 'GBCH-Entwicklung/js/funtions.js';
 		<h2>Avatar &auml;ndern</h2><br>
 		<?php if (file_exists($filename))
 		{?>
-			<img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
+			<img src="../Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
 		<?php }
 		else 
 		{?>
-			<img src="../ressources/Bilder/uploads/none.jpg" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
+			<img src="../Bilder/uploads/none.jpg" alt="avatar" width="100px" height="100px" style="border-radius:15px"><br><br><br>
 		<?php }?>
 		
 		<!-- Upload -->		<form action="../ressources/upload.php" method="post" enctype="multipart/form-data">
