@@ -6,12 +6,12 @@ session_start ();
 <head>
 <meta charset="ISO-8859-1">
 <title>GBCH - Home</title>
-<link rel="shortcut icon" href="../ressources/Bilder/GBCH_Browser_image.png" type="image/x-icon">
-<link href="../css/Project.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="/ressources/Bilder/GBCH_Browser_image.png" type="image/x-icon">
+<link href="/css/Project.css" type="text/css" rel="stylesheet" />
 </head>
 
 <?php
-include_once '../ressources/Menu_with_Banner.php';
+include_once '/ressources/Menu_with_Banner.php';
 ?>
 
 <body>
@@ -30,6 +30,6 @@ include_once '../ressources/Menu_with_Banner.php';
 </html>
 
 <?php
-include_once '../ressources/News.php';
-include_once '../ressources/Aktuelle_Folgen.php';
+include_once '/ressources/News.php';
+include_once '/ressources/Aktuelle_Folgen.php';
 ?>

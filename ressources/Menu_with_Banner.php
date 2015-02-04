@@ -21,15 +21,15 @@ $register = "<text>" . "registrieren / login" . "</text>";
 		<ul>
 			<!-- GBCH Banner vor dem Menuband -->
 			<div id="logo">
-				<a href="../sites/index.php"><img alt="GBCH-Banner"
-					src="../ressources/Bilder/banner_text.png" width="150px" height="50px" 
+				<a href="/GBCH-Entwicklung/index.php"><img alt="GBCH-Banner"
+					src="/GBCH-Entwicklung/Bilder/banner_text.png" width="150px" height="50px" 
 					height="65px"></a>
 			</div>
-			<li><a href="Games.php">Games</a>
+			<li><a href="/GBCH-Entwicklung/sites/Games.php">Games</a>
 				<ul>
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
 					<li><a href="#">Deadspace 3</a></li>
-					<li><a href="League_of_Legends.php">League of Legends</a></li>
+					<li><a href="/GBCH-Entwicklung/sites/League_of_Legends.php">League of Legends</a></li>
 				</ul></li>
 
 			<li><a href="#">Special</a></li>
@@ -40,18 +40,18 @@ $register = "<text>" . "registrieren / login" . "</text>";
 					<li><a href="#">Samu</a></li>
 				</ul></li>
 
-			<li><a href="../sites/Kontakt.php">Kontakt</a></li>
+			<li><a href="/GBCH-Entwicklung/sites/Kontakt.php">Kontakt</a></li>
 			<!-- 			<li><a href="Registration.php"><span class="register">Register / -->
 			<!-- 						Login</span></a></li> -->
 			<div class="login_home">
-				<form action="../ressources/login1.php" method="post">
+				<form action="/GBCH-Entwicklung/ressources/login1.php" method="post">
 					<input id="Username" name="Username" placeholder="Username"
 						size="15" required /> <input id="Passwort" name="Passwort"
 						type="password" placeholder="Passwort" size="15" required />
 					<span class="login_submit">
 						<input type="submit" name="Submit_login" value="Login" />
 					</span>
-					<div class="kleiner_text">Klicke zum <a href="../sites/Registration.php">registrieren</a></div>
+					<div class="kleiner_text">Klicke zum <a href="/GBCH-Entwicklung/sites/Registration.php">registrieren</a></div>
 				</form>
 			</div>
 		
@@ -67,15 +67,15 @@ $register = "<text>" . "registrieren / login" . "</text>";
 	<div id="cssmenu">
 		<ul>
 			<div id="logo">
-				<a href="../sites/index.php"><img alt="GBCH-Banner"
-					src="../ressources/Bilder/banner_text.png" width="150px" height="50px"
+				<a href="/GBCH-Entwicklung/index.php"><img alt="GBCH-Banner"
+					src="/GBCH-Entwicklung/Bilder/banner_text.png" width="150px" height="50px"
 					height="49px"></a>
 			</div>
-			<li><a href="Games.php">Games</a>
+			<li><a href="/GBCH-Entwicklung/sites/Games.php">Games</a>
 				<ul>
 					<li><a href="#">Borderlands: The Pre Sequel</a></li>
 					<li><a href="#">Deadspace 3</a></li>
-					<li><a href="League_of_Legends.php">League of Legends</a></li>
+					<li><a href="/GBCH-Entwicklung/sites/League_of_Legends.php">League of Legends</a></li>
 				</ul></li>
 
 			<li><a href="#">News</a></li>
@@ -90,10 +90,10 @@ $register = "<text>" . "registrieren / login" . "</text>";
 
 			<li><a href="Kontakt.php">Kontakt</a>
 			
-			<li><a href="userhome.php"><span class="register"><?php echo $username ?></span></a>
+			<li><a href="/GBCH-Entwicklung/sites/userhome.php"><span class="register"><?php echo $username ?></span></a>
 				<ul>
 					<li>
-						<span class = "logout"><a href="../ressources/logout.php">Logout</a></span>
+						<span class = "logout"><a href="/GBCH-Entwicklung/ressources/logout.php">Logout</a></span>
 					</li>
 				</ul>
 			</li>
