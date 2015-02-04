@@ -32,7 +32,7 @@ while($zeile = $result->fetch_array())
 }
 //In diesem Styl kannst du überall die Session Infos abrufen:
 if($_SESSION["logedin"]){
-header('Location: ../sites/index.php');
+header('Location: ../index.php');
 
 } else {
 	header ("Location: ../sites/login_fail.php");
