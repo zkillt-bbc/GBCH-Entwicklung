@@ -42,7 +42,7 @@ class Comment
 		?>
 			<div class="comment">
 				<div class="comment-avatar">
-					<img src="../ressources/Bilder/uploads/<?php echo $link_open.$d['name']?>.png" alt="avatar">
+					<img src="../Bilder/uploads/<?php echo $link_open.$d['name']?>.png" alt="avatar">
 				</div>
 		<?php return '
 				<div class="name"><span class ="bold">'
