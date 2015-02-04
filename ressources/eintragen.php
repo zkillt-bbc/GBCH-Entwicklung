@@ -3,11 +3,11 @@ $username = $_POST['Username'];
 $vorname = $_POST['Vorname'];
 $nachname = $_POST['Name'];
 $mail = $_POST['Email'];
-$passwort = $_POST['Passwort'];
+$passwort = $_POST['pass1'];
 $geburtsdatum = $_POST['Geburtsdatum'];
 
 // neue Datenbankverbindung
-$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3007");
+$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
 
 $query = "select * from registration";
 
@@ -21,7 +21,7 @@ while($zeile = $result->fetch_array())
 			values (null,"'.$username.'","'.$nachname.'","'.$vorname.'","'.$mail.'",md5("'.$passwort.'"),"'.$geburtsdatum.'","../ressources/Bilder/uploads/none.jpg");';
 		
 		$mysqli->query($query);
-		header ("Location: ../sites/index.php");
+		header ("Location: ../index.php");
 	}
 	else
 	{
