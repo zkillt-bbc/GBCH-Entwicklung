@@ -1,109 +1,107 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<title>GBCH - League of Legends Ep. 1</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<link href="../css/Project.css" type="text/css" rel="stylesheet" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="../js/script.js"></script>
+<meta charset="UTF-8" />
+<title>GBCH - League of Legends Ep. 1</title>
+<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+<link href="../css/Project.css" type="text/css" rel="stylesheet" />
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../js/script.js"></script>
 </head>
 <body>
-<?php 
-session_start();
+<?php
+session_start ();
 require_once '../ressources/Menu_with_Banner.php';
+error_reporting ( E_ALL ^ E_NOTICE );
+include "../ressources/connect.php";
+include "../ressources/comment.class.php";
+/*
+ * /	Select all the comments and populate the $comments array with objects
+ */
+$comments = array ();
+$result = mysql_query ( "SELECT * FROM comments ORDER BY dt DESC" );
+while ( $row = mysql_fetch_assoc ( $result ) ) {
+	$comments [] = new Comment ( $row );
+}
 ?>
-	<div class = "Youtube_Video">
-		<iframe width="560" height="315" src="//www.youtube.com/embed/6mcVZeyluv8?list=UUngttbGHZE6vBamuevGFmQw" frameborder="0" allowfullscreen></iframe>
+	<div class="Youtube_Video">
+		<iframe width="560" height="315"
+			src="//www.youtube.com/embed/6mcVZeyluv8?list=UUngttbGHZE6vBamuevGFmQw"
+			allowfullscreen></iframe>
 	</div>
 	<div class="wrap">
 	<?php
-	error_reporting(0);
-	if($_SESSION["logedin"]){
-		// retrive post
-		include('../ressources/config.php');
-		include ('../ressources/function.php');
-		dbConnect();
-		
-		$query = mysql_query(
-			'SELECT *
-			FROM comment');
-		$row = mysql_fetch_array($query);
-	?>
+	error_reporting ( 0 );
+	if ($_SESSION ["logedin"]) {
+		?>
+		<body>
+				<div id="main1">
 
-	<?php
-		// retrive comments with post id
-		$comment_query = mysql_query(
-			"SELECT *
-			FROM comment
-			ORDER BY id DESC");
-	?>
-		<h2>Comments.....</h2>
-		<div class="comment-block">
-		<?php while($comment = mysql_fetch_array($comment_query)): ?>
-			<div class="comment-item">
-				<div class="comment-avatar">
-					<img src="../ressources/Bilder/uploads/<?php echo $comment["username"] ?>.png" alt="avatar">
-				</div>
-				<div class="comment-post">
-					<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
-					<p><?php echo $comment['comment']?></p>
-				</div>
-			</div>
-		<?php endwhile?>
-		</div>
+					<div id="addCommentContainer">
+						F&uumlge einen Kommentar hinzu
+						<form id="addCommentForm" method="post"
+							action="../ressources/submit.php">
+							<div>
+								<div class="oli">
+									<label for="name">Your Name</label> <input type="text"
+										name="name" id="name"
+										value="<?php echo $_SESSION['Username'];?>" readonly />
+								</div>
 
-		<h2>Submit new comment</h2>
-		
-		
-		<form id="form" method="post" action="ajax_comment.php">
-			<label>
-				<span>Your comment *</span>
-				<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here...." required></textarea>
-			</label>
-		<div id="comment_submit" class="comment_submit">
-			<input type="submit" name="submit" id="submit" value="Submit Comment">
-		</div>
-		</form>	
-		<?php }
-		else	
-		{
-			// retrive post
-			include('../ressources/config.php');
-			include ('../ressources/function.php');
-			dbConnect();
-			
-			$query = mysql_query(
-					'SELECT *
-			FROM comment');
-			$row = mysql_fetch_array($query);
-			?>
-			
-				<?php
-					// retrive comments with post id
-					$comment_query = mysql_query(
-						"SELECT *
-						FROM comment
-						ORDER BY id DESC");
-				?>
-				
-			
-					<h2>Comments.....</h2>
-					<div class="comment-block">
-					<?php while($comment = mysql_fetch_array($comment_query)): ?>
-						<div class="comment-item">
-							<div class="comment-avatar">
-								<img src="../ressources/Bilder/uploads/<?php echo $comment["username"] ?>.png" alt="avatar">
+								<textarea name="body" rows="4"></textarea>
+
+								<input type="submit" id="submit" value="Submit"
+									class="btn btn-default" />
 							</div>
-							<div class="comment-post">
-								<h3><?php echo $comment['username'] ?> <span>said....</span></h3>
-								<p><?php echo $comment['comment']?></p>
-							</div>
-						</div>
-					<?php endwhile?>
+						</form>
 					</div>
-			<p> Bitte log dich ein um Kommentare zu schreiben: <a href="Registration.php">Login</a></p>
+						<?php
+		
+		/*
+		 * /	Output the comments one by one:
+		 */
+
+		foreach ( $comments as $c ) 
+		{
+			echo $c->markup ();
+		}
+
+		?>
+		
+		</div>
+
+
+
+			</div>
+
+			<script type="text/javascript"
+				src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/script.js"></script>
+
+		</body>
+	<?php
+	
+} else {
+		?>
+				<body>
+			<div class="body">
+						<?php
+		
+		/*
+		 * /	Output the comments one by one:
+		 */
+		foreach ( $comments as $c ) {
+			echo $c->markup ();
+		}
+		?>
+		
+		</div>
+		<script type="text/javascript"
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+
+</body>
 		<?php } ?>
-	</div>
 </body>
 </html>

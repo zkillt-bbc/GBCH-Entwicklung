@@ -7,7 +7,7 @@ $passwort = $_POST['Passwort'];
 $geburtsdatum = $_POST['Geburtsdatum'];
 
 // neue Datenbankverbindung
-$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3307");
+$mysqli = new mysqli("localhost", "root", "", "gbch_data", "3007");
 
 $query = "select * from registration";
 

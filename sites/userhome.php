@@ -40,7 +40,7 @@ if (file_exists ( $filename ))
 		<div class="avatar">
 		<!-- the default avatar if no user avatar is set -->
 			<div class="bw pic">
-				<a href="#openAvatar"><img src="../ressources/Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar"width="160px" height="160px"></a>
+				<a href="#openAvatar"><img src="../Bilder/uploads/<?php echo $_SESSION["Username"]?>.png" alt="avatar"width="160px" height="160px"></a>
 			</div>
 			<span class = "display">Klicke auf das Bild um den Avatar zu &auml;ndern.</span>
 		</div>
@@ -51,7 +51,7 @@ if (file_exists ( $filename ))
 		<div class="avatar">
 		<!-- the default avatar if no user avatar is set -->
 			<div class="bw pic">
-				<a href="#openAvatar"><img src="../ressources/Bilder/uploads/none.jpg" alt="avatar"width="160px" height="160px"></a>
+				<a href="#openAvatar"><img src="../Bilder/uploads/none.jpg" alt="avatar"width="160px" height="160px"></a>
 			</div>
 			<span class = "display">Klicke auf das Bild um den Avatar zu &auml;ndern.</span>
 		</div>

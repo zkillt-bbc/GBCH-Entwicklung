@@ -238,10 +238,15 @@ a {
 	background-color: #D6D6D6;
 }
 
+#confirmMessage
+{
+	font-size: 13px;
+}
+
 .login {
 	float: left;
-	width: 650px;
-	margin: 10px 0px 0px 0px;
+	width: 50px;
+	margin: 10px 0px 0px 150px;
 	padding: 0px 20px 0px 20px;
 	background-color: #D6D6D6;
 }

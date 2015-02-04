@@ -6,7 +6,7 @@
 session_start();
 $aktuell = $_SESSION['Username'];
 $string = str_replace("image/", "", "image/png");
-$target_dir = "Bilder/uploads/";
+$target_dir = "../Bilder/uploads/";
 $target_file = $target_dir . basename ( $_FILES ["fileToUpload"] ["name"] );
 $uploadOk = 1;
 $imageFileType = pathinfo ( $target_file, PATHINFO_EXTENSION );
