@@ -15,7 +15,7 @@ include_once '../ressources/Menu_with_Banner.php';
 
 			<!-- Episode 1 -->
 			<span class="thumbnail"><img
-				src="../ressources/Bilder/League_of_Legends.png" width=300px
+				src="../Bilder/League_of_Legends.png" width=300px
 				height=180px></span>
 			<div class=news>
 				<a href="http://www.gbch.ch/games/league_of_legends">League of
@@ -32,7 +32,7 @@ include_once '../ressources/Menu_with_Banner.php';
 
 			<!-- Episode 2 -->
 			<span class="thumbnail"><img
-				src="../ressources/Bilder/League_of_Legends.png" width=300px
+				src="../Bilder/League_of_Legends.png" width=300px
 				height=180px></span>
 			<div class=news>
 				<a href="http://www.gbch.ch/games/league_of_legends">League of

@@ -20,9 +20,9 @@ include_once '../ressources/Menu_with_Banner.php';
 			</div>
 			
 			<div class = formular>
-				<form>
+				<form action="MAILTO:timkillenberger@gmail.com" method="post" enctype="text/plain">
 					<input id="Name" name="Name" placeholder="Full name"/><br><br>
-					<input id="Email" name="Email" placeholder="E-Mail"/><br><br>
+					<input id="Email" name="Email" type="email" placeholder="E-Mail"/><br><br>
 					<input id="Betreff" name="Betreff" placeholder="Betreff"/><br><br>
 					<textarea id="Text" name="Text" rows="10" cols="45" placeholder="Text hier eingeben"></textarea><br><br>
 					<input type="submit" value="Senden"/>
