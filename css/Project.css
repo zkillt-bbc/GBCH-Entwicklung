@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 html {
-	background-image: url("../ressources/Bilder/particles.png");
+	background-image: url("../Bilder/particles.png");
 	overflow: hidden;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 #header {
-	background-image: url("../ressources/Bilder/FarCry4.png");
+	background-image: url("../Bilder/FarCry4.png");
 	height: 325px;
 	margin: 15px 0px 0px 0px;
 	background-repeat: no-repeat;
@@ -167,7 +167,7 @@ a {
 	width: 100%;
 	padding-top: 0px;
 	margin-top: 20px;
-	background-image: url("../ressources/Bilder/regal.jpg");
+	background-image: url("../Bilder/regal.jpg");
 	border-radius: 10px;
 	background-repeat: repeat;
 }
@@ -512,7 +512,7 @@ h4
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background-image: url(. ./ressources/Bilder/menu.png);
+	background-image: url(Bilder/menu.png);
 	color: black;
 }
 
@@ -532,7 +532,7 @@ h4
 
 #cssmenu {
 	font-family: Montserrat, sans-serif;
-	background-image: url("../ressources/Bilder/menu.png"); margin : 0 auto;
+	background-image: url("../Bilder/menu.png"); margin : 0 auto;
 	width: 1000px;
 	margin: 0 auto
 }

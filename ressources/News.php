@@ -43,14 +43,15 @@
 			<div class="plattform">
 			
 				<!-- Small icons at bottom -->
-				<a href="http://www.youtube.com/channel/UCngttbGHZE6vBamuevGFmQw"><img
-					alt="Youtube" src="../ressources/Bilder/YouTube_Square.png"
-					width=40px height=40px;></a> <a
-					href="https://twitter.com/gamingbrosch"><img alt="Twitter"
-					src="../ressources/Bilder/Twitter_icon.png" width=40px height=40px;></a>
-				<a href="https://plus.google.com/112562657174932883890/posts"><img
-					alt="Google Plus" src="../ressources/Bilder/Google_Plus_logo.png"
-					width=40px height=40px;></a>
+				<a href="http://www.youtube.com/channel/UCngttbGHZE6vBamuevGFmQw">
+					<img alt="Youtube" src="Bilder/YouTube_Square.png" width=40px height=40px></a>
+				
+				<a href="https://twitter.com/gamingbrosch">
+					<img alt="Twitter" src="Bilder/Twitter_icon.png" width=40px height=40px></a>
+					
+				<a href="https://plus.google.com/112562657174932883890/posts">
+					<img alt="Google Plus" src="Bilder/Google_Plus_logo.png" width=40px height=40px></a>
+				
 			</div>
 		</div>
 	</div>

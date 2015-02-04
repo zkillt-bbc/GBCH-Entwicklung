@@ -14,7 +14,7 @@
 				Aktuelle Folgen
 			</div>
 			
-			<img src="../ressources/Bilder/League_of_Legends.png">
+			<img src="Bilder/League_of_Legends.png">
 			<div class = news>
 					<a href="../sites/League_of_Legends.php">League of Legends</a><br>
 						<span class = "ep_name"><a href="lol_ep1.php">Episode 1: Botlane of Doom</a></span><br><br>				
@@ -23,7 +23,7 @@
 						der Bot mit Lucian. <br><br><br><br><br>
 			</div>
 			
-			<img src="../ressources/Bilder/Deadspace 3.jpg">
+			<img src="Bilder/Deadspace 3.jpg">
 			
 			<div class = news>
 					<a href="#">Deadspace 3</a><br>
@@ -34,7 +34,7 @@
 						angegriffen werden. <br><br><br><br><br>
 			</div>
 			
-			<img alt="Borderlands: The Pre Sequel #24" src="../ressources/Bilder/Borderlands Pre squel.png">
+			<img alt="Borderlands: The Pre Sequel #24" src="Bilder/Borderlands Pre squel.png">
 			<div class = news>
 					<a href="#">Borderlands: The Pre Sequel</a>
 						Episode 24: Abschuss!<br><br>				
