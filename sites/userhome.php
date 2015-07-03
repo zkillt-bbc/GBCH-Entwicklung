@@ -71,7 +71,7 @@ $row = $rs->fetch_array ();
 				Username:<br> <input id="Username" name="Username" value="<?php echo $row['Username'];?>" readonly="readonly"/><br><br>
 				Nachname:<br> <input id="Nachname" name="Nachname" value="<?php echo $row['Nachname'];?>" readonly="readonly"/> <br><br>
 				Vorname:<br> <input id="Vorname" name="Vorname" value="<?php echo $row['Vorname'];?>" readonly="readonly"/> <br><br>
-				Email:<br> 	<input id="Mail" name="Mail" value="<?php echo $row['Mail'];?>"/><br><br>
+				Email:<br> 	<input id="Mail" type="email" name="Mail" value="<?php echo $row['Mail'];?>"/><br><br>
 				Geburtsdatum:<br> <input id="Geburtsdatum" name="Gebutsdatum" value="<?php echo $row['Geburtsdatum'];?>" readonly="readonly"/> <br><br>	
 				<input id="submit" type="submit" name="submit" value="&Auml;nderungen speichern" /><br>
 				

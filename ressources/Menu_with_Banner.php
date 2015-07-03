@@ -5,6 +5,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="shortcut icon" href="../Bilder/GBCH_Browser_image.png" type="image/x-icon">
 <title>GBCH - League of Legends</title>
 <link href="css/Project.css" type="text/css" rel="stylesheet" />
 </head>
@@ -46,7 +47,7 @@ $register = "<text>" . "registrieren / login" . "</text>";
 			<div class="login_home">
 				<form action="/GBCH-Entwicklung/ressources/login1.php" method="post">
 					<input id="Username" name="Username" placeholder="Username"
-						size="15" required /> <input id="Passwort" name="Passwort"
+						size="15"  maxlength="16" required /> <input id="Passwort" name="Passwort"
 						type="password" placeholder="Passwort" size="15" required />
 					<span class="login_submit">
 						<input type="submit" name="Submit_login" value="Login" />

@@ -27,7 +27,7 @@ $umbenannt = $target_dir . $_SESSION["Username"] . "." . $string;
 
 // Check if file already exists
 if (file_exists ( $target_file )) {
-	echo "Sorry, file already exists. ";
+	echo "Sorry, file already exists. rea";
 	$uploadOk = 0;
 	header ("Refresh: 3; url=../sites/userhome.php");
 }
@@ -59,7 +59,7 @@ if ($uploadOk == 0) {
 		$query = 'UPDATE registration SET Avatar = "'.$umbenannt.'" WHERE Username = "'.$aktuell.'";';
 		
 		$mysqli->query($query);
-		header ("Refresh: 3; url = ../sites/userhome.php");
+		header ("Location: ../sites/userhome.php");
 	} else {
 		echo "Sorry, there was an error uploading your file. ";
 	}
